@@ -21,6 +21,7 @@ google-cloud-datastore==2.8.1
 google-cloud-secret-manager==2.12.4
 google-cloud-storage==2.5.0
 google-cloud-firestore==2.7.0
+google-cloud-logging
 
 parse
 skimpy
