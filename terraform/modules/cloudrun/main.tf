@@ -85,12 +85,16 @@ module "cloud-run-service-account" {
 
 
 resource "null_resource" "deploy-cloudrun-image" {
+  triggers = {
+    build_trigger = "${timestamp()}"
+  }
 
   provisioner "local-exec" {
     working_dir = var.source_dir
     command = join(" ", [
       "gcloud builds submit",
       "--config=cloudbuild.yaml",
+      "--project=${var.project_id}",
       join("", [
         "--substitutions=",
         join(",", [
