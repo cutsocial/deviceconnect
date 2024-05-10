@@ -19,6 +19,9 @@ ENV APP_HOME /app
 WORKDIR $APP_HOME
 COPY . ./
 
+# A dummy echo to trigger a rebuild
+RUN echo "Triggering rebuild"
+
 # Install production dependencies.
 RUN pip install --no-cache-dir -r requirements.txt
 
