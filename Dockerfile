@@ -23,7 +23,9 @@ COPY . ./
 RUN echo "Triggering rebuild"
 
 # Install production dependencies.
+# Arman added gcc and python3-dev to install the required packages for the psycopg2 library
 RUN apt-get update && apt-get install -y gcc python3-dev
+
 RUN pip install --no-cache-dir -r requirements.txt
 
 ENV FLASK_ENV=PRODUCTION
