@@ -190,7 +190,7 @@ resource "google_cloud_run_service" "ingest" {
         resources {
           limits = {
             "memory" = "1G"
-            "cpu"    = "2"
+            "cpu"    = "1"
           }
         }
         dynamic "env" {
