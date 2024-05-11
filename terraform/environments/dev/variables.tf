@@ -50,13 +50,13 @@ variable "region" {
 variable "firestore_region" {
   type        = string
   description = "Firestore Region"
-  default     = "us-central1"
+  default     = "us-central"
 }
 
 variable "bq_dataset_location" {
   type        = string
   description = "BigQuery Dataset location"
-  default     = "us-central1"
+  default     = "US"
 }
 
 variable "storage_multiregion" {
