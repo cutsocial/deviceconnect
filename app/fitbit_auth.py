@@ -111,7 +111,7 @@ def device_registration():
     user = session.get("user")
 
     if user is None:
-        return redirect(url_for("/login"))
+        return redirect(url_for("frontend_bp.login"))
 
     username = session.get("user")["email"]
 
