@@ -7,7 +7,7 @@ google-auth-oauthlib==0.4.1
 requests-toolbelt==0.9.1
 pandas
 pandas_gbq
-gunicorn==21.2.0
+gunicorn==23.0.0
 python-dotenv
 flask-dance
 flask-login
