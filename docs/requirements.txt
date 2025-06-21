@@ -3,6 +3,6 @@ sphinx_copybutton
 sphinxcontrib-kroki
 sphinxcontrib-httpdomain
 releases
-urllib3>=2.2.2 # not directly required, pinned by Snyk to avoid a vulnerability
+urllib3>=2.5.0 # not directly required, pinned by Snyk to avoid a vulnerability
 zipp>=3.19.1 # not directly required, pinned by Snyk to avoid a vulnerability
 
