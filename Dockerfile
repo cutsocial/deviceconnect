@@ -13,7 +13,7 @@
 # limitations under the License.
 
 
-FROM python:3.14.0a3-slim
+FROM python:3.14.1-slim
 
 ENV PYTHONUNBUFFERED True
 ENV APP_HOME /app
